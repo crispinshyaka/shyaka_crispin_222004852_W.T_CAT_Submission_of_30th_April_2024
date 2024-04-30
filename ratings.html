@@ -1,13 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Rating</title>
-    <style>
-        /* Add your CSS styling here */
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>gkings Recipes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css0/bootstrap.min.css">
+    <link rel="stylesheet" href="css0/owl.carousel.min.css">
+    <link rel="stylesheet" href="css0/magnific-popup.css">
+    <link rel="stylesheet" href="css0/font-awesome.min.css">
+    <link rel="stylesheet" href="css0/themify-icons.css">
+    <link rel="stylesheet" href="css0/nice-select.css">
+    
+    <link rel="stylesheet" href="css0/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <style type="text/css">
+    .header-area {
+    width: 100%;
+    background: none;
+/*    margin-left: 200px; */
+}
+.main-menu {
+/*    flex-grow: 1; */
+    background-color: black;
+    border-radius: 4px;
+    margin-left: 120px;
+}
+.main-menu ul li ul.submenu li a {
+    color: blue; 
+    background-color: black; 
+    padding: auto;
+    border-radius: 4px;
+}
+.main-menu ul li a:hover,
+.main-menu ul li ul.submenu li a:hover {
+    background-color: skyblue; 
+    color: black; 
+}
+
+
+#navigation {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding-left: 0; 
+    margin-left: auto;
+    align-items: center;
+    background-color: none;
+}
+
+#navigation li {
+    margin-right: 20px;
+}
+
+#navigation li a {
+    color: white;
+    text-decoration: none; 
+}
+
+#navigation li a:hover {
+    text-decoration: none; 
+    color: #9df9ef; 
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.search-container form {
+    display: flex;
+    margin-left:200px;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.search-container input[type="text"] {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.search-container button {
+    background-color: #0f7c8c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #09575d;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+input[type="text"], button {
+    margin-right: 10px; /* Space between the input field and button */
+}
+sr-results {
+    font-family: 'Arial', sans-serif; /* Change to any font you like */
+    color: #333; /* Dark grey text color */
+    background-color: #f9f9f9; /* Light grey background for results */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.sr-results h2 {
+    color: #0056b3; /* Blue for headings */
+}
+
+.sr-results p {
+    color: #666; /* Lighter grey for paragraph text */
+    margin: 5px 0;
+}
     </style>
 </head>
+
+<body>
+    <!-- header-start -->
+    <header>
+       <div class="header-area ">
+            <div id="sticky-header" class="main-header-area ">
+                <div class="container">
+                    <div class="row align-items-center">
+                        
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu   d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a href="#home">home</a></li>
+                                        <li><a href="about.html">about</a></li>
+                                        <li><a href="Recipes.html">Recipes</a></li>
+                                        <li><a href="ratings.html">explore <i class="ti-angle-down"></i></a>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="index.html">logout</a></li>
+                                    </ul>
+                                    
+                                </nav>
+                            </div>
+                        </div>
+                      
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
 <body>
     <h2>Rate this Recipe</h2>
     <form id="ratingForm" action="rating.php" method="POST">
