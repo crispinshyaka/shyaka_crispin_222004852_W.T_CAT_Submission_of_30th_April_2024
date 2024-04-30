@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Vegetable Bowl Recipe</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            margin: 0;
+            background-image: url(img/recepie/recpie_2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .recipe-form {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label, input {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        input[readonly] {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="recipe-form">
+        <h2>Recipe Form</h2>
+        <form>
+            <div>
+                <label for="recipeName">Recipe Name:</label>
+                <input type="text" id="recipeName" value="Pure Vegetable Bowl" readonly>
+            </div>
+            <div>
+                <label for="ingredients">Ingredients:</label>
+                <input type="text" id="ingredients" value="Cauliflower Rice Bowl With Curried Lentils, Carrots And Yogurt" readonly>
+            </div>
+            <span>or</span>
+            <div>
+              <label for="ingredients">Ingredients:</label>
+                <input type="text" id="ingredients" value="roasted veggies, quinoa, chickpeas, and a vibrant kale sauce" readonly>  
+            </div>
+        </form>
+    </div>
+</body>
+</html>

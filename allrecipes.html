@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes Display Form</title>
+    <style>
+        .recipe-form {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .recipe-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .recipe-box {
+            flex-basis: 45%; /* Adjust based on your layout needs */
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+        }
+        label, input {
+            display: block;
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        input[readonly] {
+            background-color: #eee;
+            color: #333;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="recipe-form">
+        <h2>Recipe Form</h2>
+        <div class="recipe-container">
+            <div class="recipe-box">
+                <label for="recipeName1">Recipe Name:</label>
+                <input type="text" id="recipeName1" value="Egg Manchurian" readonly>
+                <label for="ingredients1">Ingredients:</label>
+                <input type="text" id="ingredients1" value="Eggs, Diced Ginger, Garlic, Fresh Green Chilies" readonly>
+            </div>
+            <div class="recipe-box">
+                <label for="recipeName2">Recipe Name:</label>
+                <input type="text" id="recipeName2" value="Egg Masala Ramen" readonly>
+                <label for="ingredients2">Ingredients:</label>
+                <input type="text" id="ingredients2" value="Packet top ramen, eggs, tbsp jeera (cumin seeds), chopped onion, glasses water, tbsp chilli flakes, tbsp oregano, tbsp mustard oil" readonly>
+            </div>
+            <div class="recipe-box">
+                <label for="recipeName3">Recipe Name:</label>
+                <input type="text" id="recipeName3" value="Pure Vegetable Bowl" readonly>
+                <label for="ingredients">Ingredients:</label>
+                <input type="text" id="ingredients" value="Cauliflower Rice Bowl With Curried Lentils, Carrots And Yogurt" readonly>
+                 <span>or</span>
+                <label for="ingredients">Ingredients:</label>
+                <input type="text" id="ingredients" value="roasted veggies, quinoa, chickpeas, and a vibrant kale sauce" readonly>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>

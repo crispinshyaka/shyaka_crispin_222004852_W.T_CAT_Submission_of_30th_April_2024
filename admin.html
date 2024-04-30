@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>admin login</title>
+  <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
+  <link href="assets/css/stylish.css" rel="stylesheet">
+
+</head>
+<body>
+
+<section class='login' id='login'>
+  <div class='head'>
+  <h1 class='company'>rrs admin</h1>
+  </div>
+  <p class='msg'>Welcome back</p>
+  <div class='form'>
+    <form id="Login" action="adminlog.php" method="POST">
+  <input type="text" id="username" name="username" placeholder='Username' class='text'  required><br>
+  <input type="password" id="password" name="password" placeholder='••••••••••••••' class="password"><br>
+  <button class="submit" type="submit">Login</button>
+    </form>
+    <a href="index.html" class='forgot'>Forgot?</a>
+  </div>
+</section>
+<footer>
+  <p>Made with <span class='heart'>&hearts;</span> by gkings(<a href='https://github.com/pxntxs'>@crispin</a>)</p>
+  
+</footer>
+<script>
+	var btnLogin = document.getElementById('do-login');
+var idLogin = document.getElementById('login');
+var username = document.getElementById('username');
+btnLogin.onclick = function(){
+  idLogin.innerHTML = '<p>We\'re happy to see you again, </p><h1>' +username.value+ '</h1>';
+}
+</script>
+</body>
+</html>

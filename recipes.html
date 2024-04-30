@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>gkings recipes</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  
+
+  
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style type="text/css">
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: #555;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Center the form horizontally */
+  align-items: center; /* Center the form vertically */
+  height: 100vh; /* Adjust height as needed */
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.container form {
+  width: 400px; /* Adjust width as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-image: url(../img/img7.jpg);
+  background-repeat: no-repeat;
+}
+
+.container form .form-group {
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+.container form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.container form input[type="text"] {
+  width: calc(100% - 12px); /* Adjust width as needed */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.container form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: whitesmoke;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container form button[type="submit"]:hover {
+  background-color: blueviolet;
+}
+
+
+  </style>
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+      <li><a href="home.php">Home</a></li>
+      <li><a href="#recipe">recipes</a></li>
+    </ul>
+  </nav>
+ <div class="container">
+        
+        <form action="reci.php" method="POST">
+            <div class="form-group">
+                <label for="title">Recipe Name:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="ingredient_lst">ingredients:</label>
+                <input type="text" id="ingredient_lst" name="ingredient_lst" required>
+                <label for="preparation_time">preparation period:</label>
+                <input type="text" id="preparation_time" name="preparation_time" required>
+                <label for="cooking_time">cooking time:</label>
+                <input type="text" id="cooking_time" name="cooking_time">
+                <label for="nutrition_info">informations:</label>
+                <input type="text" id="nutrition_info" name="nutrition_info" required>
+                <label for="instructions">instructions:</label>
+                <input type="text" id="instructions" name="instructions" required>
+                
+
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+
+</body>
+</html>
