@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Rating</title>
+    <style>
+        /* Add your CSS styling here */
+    </style>
+</head>
+<body>
+    <h2>Rate this Recipe</h2>
+    <form id="ratingForm" action="rating.php" method="POST">
+        <input type="hidden" name="recipe_id"> 
+        <label for="firstname">username</label>
+        <input type="text" name="firstname">
+        <label for="rating">Your Rating:</label>
+        <input type="number" name="rating"  required>
+        <label for="revew">review</label>
+        <input type="text" name="revew">
+        <button type="submit">Submit Rating</button>
+    </form>
+
+    <script>
+        // Add JavaScript code here if needed
+    </script>
+</body>
+</html>
